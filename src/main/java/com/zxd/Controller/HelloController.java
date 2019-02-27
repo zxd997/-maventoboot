@@ -23,7 +23,7 @@ public class HelloController {
     public Student hell1o(){
         Student student = new Student();
         student.setCreatTime(new Date());
-        student.setId(1);
+        //student.setId(1);相同的主键就会 更新
         student.setName("迪丽热巴");
         studentDao.save(student);
         return student;
